@@ -25,7 +25,7 @@ class Cryptyone
 
     private function env(): string
     {
-        return $this->credentials['API_KEY'] = preg_match("/[a-z0-9]+\.develop888\.com/", $_SERVER['HTTP_HOST']) ? API_KEY_DEV : API_KEY_PROD;
+        return $this->credentials['API_KEY'] = preg_match("/[a-z0-9]+\.mysampleurl\.com/", $_SERVER['HTTP_HOST']) ? API_KEY_DEV : API_KEY_PROD;
     }
 
     public function setParameters(array $parameters)
